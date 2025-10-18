@@ -2,8 +2,7 @@
 const nextConfig = {
   output: 'export', // enables static export
   experimental: {
-    turbo: true,
+    turbo: true, // optional
   },
 };
-
 export default nextConfig;
