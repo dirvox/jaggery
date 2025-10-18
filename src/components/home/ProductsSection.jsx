@@ -23,7 +23,7 @@ const ProductsSection = () => {
             className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl duration-300"
           >
             <div className="relative w-full h-64">
-              <Image
+              <img
                 src={item.img}
                 alt={item.name}
                 fill
