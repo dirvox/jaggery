@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
-    "export": "next build --turbopack && next export"
+    "start": "next start"
   },
   "dependencies": {
     "next": "15.5.6",
