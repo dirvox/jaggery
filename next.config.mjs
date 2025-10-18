@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // enables static export
   experimental: {
-    turbo: true, // optional
+    turbo: true,
   },
 };
 export default nextConfig;
