@@ -14,11 +14,9 @@ const ProductsSection = () => {
 
 
 useEffect(() => {
-
-  console.log("use effect called ")
     const checkBackend = async () => {
       try {
-        const response = await axios.get(`${baseUrl}api/items/democheck`);
+        const response = await axios.get(`${baseUrl}/api/items/democheck`);
         console.log("Backend response:", response.data);
       } catch (err) {
         console.error("Backend error:", err.message);
