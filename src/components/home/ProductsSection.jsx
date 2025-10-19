@@ -1,9 +1,31 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import axios from "axios";
+import baseUrl from "../server/baseurl";
+
+
 
 
 const ProductsSection = () => {
+
+
+
+
+
+useEffect(() => {
+    const checkBackend = async () => {
+      try {
+        const response = await axios.get(`${baseUrl}api/items/democheck`);
+        console.log("Backend response:", response.data);
+      } catch (err) {
+        console.error("Backend error:", err.message);
+      }
+    };
+
+    checkBackend();
+  }, []);
+  
   const products = [
     { name: "Organic Jaggery Block", img: "/blocks.jpeg" },
     { name: "Jaggery Powder", img: "/powder.jpeg" },
