@@ -33,6 +33,7 @@ const ProductsSection = () => {
 
   // Modal + form state
   const [isOpen, setIsOpen] = useState(false);
+  const [showThankYouModal, setShowThankYouModal] = useState(false);
   const [selected, setSelected] = useState(null); // selected product
   const [form, setForm] = useState({
     name: "",
@@ -137,18 +138,26 @@ const ProductsSection = () => {
         headers: { "Content-Type": "application/json" },
       });
 
+
+       setShowThankYouModal(true);
+
       // expecting { success: true, orderId: '...' } or similar
       if (res.data && res.data.success) {
-        setSuccessMsg("Order placed successfully! Order ID: " + res.data.orderId);
-        // optionally reset form or close modal after small delay
-        setTimeout(() => {
-          closeModal();
-        }, 1800);
+          console.log("callded show djnjnjdnjd")
+         setShowThankYouModal(true);
+        // setSuccessMsg("Order placed succe
+        // ssfully! Order ID: " + res.data.orderId);
+        // // optionally reset form or close modal after small delay
+        // setTimeout(() => {
+        //   closeModal();
+        // }, 1800);
       } else {
         setErrorMsg(res.data?.message || "Failed to place order. Please try again.");
       }
     } catch (err) {
       console.error(err);
+
+  
       setErrorMsg(err.response?.data?.message || "Network error. Please try again.");
     } finally {
       setLoading(false);
@@ -347,6 +356,28 @@ const ProductsSection = () => {
           </div>
         </div>
       )}
+
+
+      {showThankYouModal && (
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50 px-4">
+          <div className="bg-white rounded-2xl p-8 w-full max-w-sm text-center shadow-lg">
+            <h3 className="text-2xl font-bold text-green-600 mb-3">
+              🎉 Order Placed Successfully!
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Thank you for your order! Our team will contact you soon for
+              delivery confirmation.
+            </p>
+            <button
+              onClick={() => setShowThankYouModal(false)}
+              className="bg-[#C19A6B] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#A97C50] transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
     </section>
   );
 };
