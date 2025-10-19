@@ -140,11 +140,13 @@ const ProductsSection = () => {
 
 
        setShowThankYouModal(true);
+       closeModal()
 
       // expecting { success: true, orderId: '...' } or similar
       if (res.data && res.data.success) {
           console.log("callded show djnjnjdnjd")
          setShowThankYouModal(true);
+         closeModal()
         // setSuccessMsg("Order placed succe
         // ssfully! Order ID: " + res.data.orderId);
         // // optionally reset form or close modal after small delay
@@ -211,7 +213,7 @@ const ProductsSection = () => {
                     >
                       Buy Now
                     </button>
-                    <button
+                    {/* <button
                       className="mt-0 px-4 py-2 rounded-full font-medium text-white bg-[#C19A6B] hover:bg-[#A97C50] transition-all"
                       onClick={() =>
                         alert(
@@ -220,7 +222,7 @@ const ProductsSection = () => {
                       }
                     >
                       Info
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
