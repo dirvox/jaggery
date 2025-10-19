@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 const HeroSection = () => {
-  const fullText = "From Khatauli — The Heart of India’s Finest Jaggery";
+  const fullText = "From Khatauli — The Heart of India’s Finest Gud/Jaggery";
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -41,7 +41,7 @@ const HeroSection = () => {
         {/* Sub Text */}
         <p className="text-base md:text-lg text-black leading-relaxed animate-fadeIn">
           Experience <strong>Khatauli’s heritage</strong> with every bite.  
-          Our jaggery is crafted from the finest sugarcane, slow-boiled to preserve
+          Our Gud/Jaggery is crafted from the finest sugarcane, slow-boiled to preserve
           its natural minerals, sweetness, and aroma — the way our ancestors made it.
         </p>
 
