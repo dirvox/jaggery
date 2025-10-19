@@ -15,7 +15,7 @@ const ProductsSection = () => {
 
 useEffect(() => {
 
-  console.log("use effect called function")
+  console.log("use effect called ")
     const checkBackend = async () => {
       try {
         const response = await axios.get(`${baseUrl}api/items/democheck`);

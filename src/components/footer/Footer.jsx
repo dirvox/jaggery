@@ -17,9 +17,9 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
         {/* Brand Section */}
         <div>
-          <h3 className="text-2xl font-bold text-[#C19A6B] mb-3">Gudwala</h3>
+          <h3 className="text-2xl font-bold text-[#C19A6B] mb-3">KhatauliGud</h3>
           <p className="text-sm text-gray-300 leading-relaxed">
-            Gudwala is your trusted destination for premium quality products and
+            KharauliGud is your trusted destination for premium quality products and
             reliable services. We believe in quality, integrity, and customer
             satisfaction.
           </p>
@@ -57,7 +57,7 @@ const Footer = () => {
             <FaPhoneAlt className="text-[#C19A6B]" /> +91 9684314745 , 8864905840
           </p>
           <p className="text-sm text-gray-300 flex justify-center md:justify-start items-center gap-2 mt-2">
-            <FaEnvelope className="text-[#C19A6B]" /> support@gudwala.com
+            <FaEnvelope className="text-[#C19A6B]" /> support@KhatauliGud.com
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@ const Footer = () => {
         {/* Copyright */}
         <div>
           <p className="text-sm">
-            © {new Date().getFullYear()} <strong>Gudwala</strong> — All Rights Reserved.
+            © {new Date().getFullYear()} <strong>KhatauliGud</strong> — All Rights Reserved.
           </p>
           {/* <p className="text-xs text-[#C19A6B]">Made with ❤️ by DV</p> */}
         </div>
