@@ -54,7 +54,7 @@ const Footer = () => {
             Uttar Pradesh, India
           </p>
           <p className="text-sm text-gray-300 flex justify-center md:justify-start items-center gap-2 mt-2">
-            <FaPhoneAlt className="text-[#C19A6B]" /> +91 9684314745 , 8864905840
+            <FaPhoneAlt className="text-[#C19A6B]" /> +91  8864905840 , 9368431474
           </p>
           <p className="text-sm text-gray-300 flex justify-center md:justify-start items-center gap-2 mt-2">
             <FaEnvelope className="text-[#C19A6B]" /> support@KhatauliGud.com
