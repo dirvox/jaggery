@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import ContactPopup from "../contact/ContactPopup";
 
 const HeroSection = () => {
   const fullText = "From Khatauli — The Heart of India’s Finest Gud/Jaggery";
@@ -27,6 +28,8 @@ const HeroSection = () => {
       className="relative flex flex-col mt-10 justify-center items-center text-center min-h-screen px-4 md:px-8 bg-cover bg-center bg-fixed"
       style={{ backgroundImage: "url('/banner.jpg')" }}
     >
+
+      <ContactPopup/>
      
       <div className="absolute inset-0 bg-gradient-to-tr from-black/30 via-black/60 to-black/40 z-0"></div>
 
@@ -77,6 +80,7 @@ const HeroSection = () => {
         }
       `}</style>
     </section>
+
   );
 };
 

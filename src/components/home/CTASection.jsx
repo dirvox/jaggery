@@ -1,7 +1,7 @@
 "use client"
 const CTASection = () => {
   return (
-    <section className="py-20 bg-[#C19A6B] text-white text-center">
+    <section className="py-20 bg-[#C19A6B] text-gray-900 text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">Get Your Pure Jaggery Today!</h2>
       <p className="mb-8">Experience the goodness of handcrafted KhatauliGud jaggery.</p>
       <button   onClick={() => {
