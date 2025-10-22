@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center  text-center py-20 px-4 bg-white"
+      className="flex flex-col items-center justify-center  text-center py-20 px-4 bg-[#FAF8F5]"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         About KhatauliGud

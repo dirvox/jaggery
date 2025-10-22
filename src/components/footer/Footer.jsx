@@ -9,6 +9,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -30,18 +31,22 @@ const Footer = () => {
           <h5 className="text-[#C19A6B] text-lg font-semibold mb-4">
             Quick Links
           </h5>
-          <ul className="space-y-2 text-sm text-gray-300">
-            {["Home", "About", "Products", "Contact"].map((link) => (
-              <li key={link}>
-                <a
-                  href={`#${link.toLowerCase()}`}
-                  className="hover:text-[#C19A6B] transition-colors duration-200"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
+        
+<ul className="space-y-2 text-sm text-gray-300">
+  <li>
+    <Link href="/">Home</Link>
+  </li>
+  <li>
+    <Link href="#about">About</Link>
+  </li>
+  <li>
+    <Link href="#products">Products</Link>
+  </li>
+  <li>
+    <Link href="/contact">Contact</Link> 
+  </li>
+</ul>
+
         </div>
 
         {/* Contact Info */}
@@ -73,7 +78,7 @@ const Footer = () => {
             (Icon, idx) => (
               <a
                 key={idx}
-                href="#"
+                href="https://www.instagram.com/khatauligud?igsh=MTljbmt4emt4cTRhMw=="
                 className="text-[#C19A6B] text-lg hover:text-white transition-colors duration-200"
               >
                 <Icon />

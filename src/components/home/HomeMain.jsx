@@ -4,6 +4,11 @@ import HeroSection from './HeroSection'
 import Footer from '../footer/Footer'
 import AboutSection from './AboutSection'
 import ProductsSection from './ProductsSection'
+import SuccessRateSection from './SuccessRateSection'
+import TestimonialsSection from './TestimonialsSection'
+import FAQSection from './FAQSection'
+import CTASection from './CTASection'
+import BlogSection from './BlogSection'
 
 const HomeMain = () => {
   return (
@@ -13,6 +18,11 @@ const HomeMain = () => {
        
         <ProductsSection/>
          <AboutSection/>
+         {/* <SuccessRateSection/> */}
+         <TestimonialsSection/>
+         <BlogSection/>
+         <FAQSection/>
+         <CTASection/>
         <Footer/>
     </div>
   )

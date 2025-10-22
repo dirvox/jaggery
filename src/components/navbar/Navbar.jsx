@@ -13,7 +13,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <img
             src="/logo2.png"
             alt="Logo"
@@ -55,17 +55,27 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
-          {menuItems.map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                className="text-[#FAF8F5] font-medium hover:text-[#C19A6B] transition-colors duration-200"
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
+  {menuItems.map((item) => {
+    // Determine href dynamically
+    let href = "#";
+    if (item === "Contact") {
+      href = "/contact"; // separate page
+    } else {
+      href = `#${item.toLowerCase()}`; // in-page scroll
+    }
+
+    return (
+      <li key={item}>
+        <a
+          href={href}
+          className="text-[#FAF8F5] font-medium hover:text-[#C19A6B] transition-colors duration-200"
+        >
+          {item}
+        </a>
+      </li>
+    );
+  })}
+</ul>
       </div>
 
       {/* Mobile Menu */}
