@@ -35,9 +35,9 @@ export const metadata = {
     canonical: "https://www.khatauligud.com",
   },
   icons: {
-    icon: "/logo2.png",
-    shortcut: "/logo2.png",
-    apple: "/logo2.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: "Khatauli Gud – Best Jaggery in India",
