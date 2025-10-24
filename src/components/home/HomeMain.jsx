@@ -9,6 +9,7 @@ import TestimonialsSection from './TestimonialsSection'
 import FAQSection from './FAQSection'
 import CTASection from './CTASection'
 import BlogSection from './BlogSection'
+import Girl from './Girl'
 
 const HomeMain = () => {
   return (
@@ -17,12 +18,14 @@ const HomeMain = () => {
         <HeroSection/>
        
         <ProductsSection/>
-         <AboutSection/>
+         <Girl/>
+         {/* <AboutSection/> */}
          {/* <SuccessRateSection/> */}
          <TestimonialsSection/>
          <BlogSection/>
          <FAQSection/>
          <CTASection/>
+        
         <Footer/>
     </div>
   )
