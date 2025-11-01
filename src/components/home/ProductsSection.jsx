@@ -194,6 +194,7 @@ const ProductsSection = () => {
 
             return (
               <div
+                onClick={() => router.push(`/order/${item.slug}`) }
                 key={item._id}
                 className="min-w-[85%] sm:min-w-0 bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 duration-300"
               >

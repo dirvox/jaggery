@@ -2,15 +2,21 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import baseUrl from "../server/baseurl";
+import { useRouter } from "next/navigation";
 
 const OrderContent = ({ product }) => {
+      const router = useRouter();
+    
+
+
+   
   console.log("product is", product);
 
   const products = [
     {
       _id: "1",
       name: "Jaggery Cubes",
-      img: "/cube.jpeg",
+      img: "/cube2.jpeg",
       slug: "jaggerycubes",
       pricePerKg: 199,
       mrpPerKg: 299,
@@ -133,7 +139,9 @@ const OrderContent = ({ product }) => {
       });
 
       if (res.data && res.data.success) {
-        setSuccessMsg("✅ Order placed successfully!");
+        // setSuccessMsg("✅ Order placed successfully!");
+        router.push("/thankyou")
+
       } else {
         setErrorMsg(res.data?.message || "❌ Failed to place order. Try again.");
       }
@@ -203,14 +211,21 @@ const OrderContent = ({ product }) => {
               className="px-3 py-2 border rounded-md w-full focus:ring-2 focus:ring-yellow-400 outline-none"
               required
             />
-            <input
-              name="phone"
-              value={form.phone}
-              onChange={handleChange}
-              placeholder="Phone (10 digits) *"
-              className="px-3 py-2 border rounded-md w-full focus:ring-2 focus:ring-yellow-400 outline-none"
-              required
-            />
+           <input
+  type="text"
+  name="phone"
+  value={form.phone}
+  onChange={(e) => {
+    const value = e.target.value.replace(/\D/g, ""); // remove non-numeric
+    if (value.length <= 10) {
+      setForm({ ...form, phone: value });
+    }
+  }}
+  placeholder="Phone (10 digits) *"
+  className="px-3 py-2 border rounded-md w-full focus:ring-2 focus:ring-yellow-400 outline-none"
+  required
+/>
+
           </div>
 
           <input
