@@ -2,33 +2,38 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import baseUrl from "../server/baseurl"; // make sure this exports your API base
-
+import { useRouter } from "next/navigation";
 const ProductsSection = () => {
+  const router = useRouter();
   const products = [
-    {
+     {
       _id: "1",
-      name: "Organic Jaggery Block",
-      img: "/blocks.jpeg",
-      pricePerKg: 179,
-      mrpPerKg: 289,
-      description: "Pure, chemical-free jaggery blocks from fresh sugarcane juice.",
+      name: "Jaggery Cubes",
+      img: "/cube2.png",
+      slug : "jaggerycubes",
+      pricePerKg: 199,
+      mrpPerKg: 299,
+      description: "Delicious jaggery cubes perfect for tea and desserts.",
     },
     {
       _id: "2",
       name: "Jaggery Powder",
       img: "/powder.jpeg",
+      slug : "jaggerypowder",
       pricePerKg: 209,
       mrpPerKg: 309,
       description: "Fine-grain organic jaggery powder ideal for tea and sweets.",
     },
     {
       _id: "3",
-      name: "Jaggery Cubes",
-      img: "/cube.jpeg",
-      pricePerKg: 199,
-      mrpPerKg: 299,
-      description: "Delicious jaggery cubes perfect for tea and desserts.",
+      name: "Organic Jaggery Block",
+      img: "/blocks.jpeg",
+      slug : "jaggeryblocks",
+      pricePerKg: 189,
+      mrpPerKg: 289,
+      description: "Pure, chemical-free jaggery blocks from fresh sugarcane juice.",
     },
+   
   ];
 
   // Modal + form state
@@ -208,7 +213,7 @@ const ProductsSection = () => {
 
                   <div className="flex justify-center gap-3">
                     <button
-                      onClick={() => openModal(item)}
+                      onClick={() => router.push(`/order/${item.slug}`) }
                       className="bg-[#FFBF00] text-[#1C1C1C] px-6 py-2 rounded-full font-semibold hover:bg-[#e6ac00] transition-all"
                     >
                       Buy Now
@@ -232,7 +237,7 @@ const ProductsSection = () => {
       </div>
 
       {/* ========== Modal ========== */}
-      {isOpen && selected && (
+      {/* {isOpen && selected && (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
           <div className="absolute inset-0 bg-black/50" onClick={closeModal} />
 
@@ -357,10 +362,10 @@ const ProductsSection = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
 
-      {showThankYouModal && (
+      {/* {showThankYouModal && (
         <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50 px-4">
           <div className="bg-white rounded-2xl p-8 w-full max-w-sm text-center shadow-lg">
             <h3 className="text-2xl font-bold text-green-600 mb-3">
@@ -378,7 +383,7 @@ const ProductsSection = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
 
     </section>
   );

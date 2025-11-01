@@ -8,7 +8,7 @@ const CTASection = () => {
     const section = document.getElementById("products");
     section?.scrollIntoView({ behavior: "smooth" });
   }} className="bg-white text-[#C19A6B] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all">
-        Shop Now
+        Buy Now
       </button>
     </section>
   );

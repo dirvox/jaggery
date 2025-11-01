@@ -10,13 +10,14 @@ import FAQSection from './FAQSection'
 import CTASection from './CTASection'
 import BlogSection from './BlogSection'
 import Girl from './Girl'
+import LimitedOffer from './LimitedOffer'
 
 const HomeMain = () => {
   return (
     <div>
         <Navbar/>
         <HeroSection/>
-       
+       <LimitedOffer/>
         <ProductsSection/>
          <Girl/>
          {/* <AboutSection/> */}
