@@ -16,7 +16,7 @@ const OrderContent = ({ product }) => {
     {
       _id: "1",
       name: "Jaggery Cubes",
-      img: "/cube2.jpeg",
+      img: "/cube2.png",
       slug: "jaggerycubes",
       pricePerKg: 199,
       mrpPerKg: 299,
