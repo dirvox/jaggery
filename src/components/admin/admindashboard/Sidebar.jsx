@@ -12,7 +12,7 @@ const Sidebar = () => {
     { name: "Dashboard", path: "/dashboard" },
     { name: "Orders", path: "/admin/orders" },
     { name: "Contact", path: "/admin/contact" },
-    { name: "Crypto", path: "/crypto" },
+    { name: "Email", path: "/admin/email" },
     { name: "Helpdesk", path: "/helpdesk" },
     { name: "Monitoring", path: "/monitoring" },
     { name: "Settings", path: "/settings" },
