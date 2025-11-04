@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import baseUrl from "@/components/server/baseurl";
 
 export default function EmailContent() {
   const [emails, setEmails] = useState("");
@@ -21,7 +22,7 @@ export default function EmailContent() {
         message,
         senderName: "Khatauli Gud Team",
       };
-      const { data } = await axios.post("http://localhost:5003/api/email/send", payload);
+      const { data } = await axios.post(`${baseUrl}/api/email/send`, payload);
       setStatus("✅ Emails sent successfully!");
     } catch (err) {
       setStatus("❌ Failed: " + (err.response?.data?.message || err.message));
