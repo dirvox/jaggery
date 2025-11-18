@@ -1,7 +1,9 @@
 "use client";
-import { useSearchParams } from "next/navigation";
 
-export default function OrderDetailsPage() {
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
+
+function OrderDetailsContent() {
   const search = useSearchParams();
   const slug = search.get("slug");
 
@@ -13,5 +15,13 @@ export default function OrderDetailsPage() {
         <strong>Order ID: </strong> {slug}
       </p>
     </div>
+  );
+}
+
+export default function OrderDetailsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <OrderDetailsContent />
+    </Suspense>
   );
 }
