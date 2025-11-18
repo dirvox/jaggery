@@ -8,7 +8,7 @@ const Navbar = () => {
   const menuItems = ["Home", "About", "Products", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#1C1C1C] px-6 md:px-12 py-3 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#1C1C1C] px-6 md:px-12 py-3 shadow-md z-1000">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center">

@@ -3,11 +3,11 @@ import OrderData from './OrderData'
 import Navbar from '../navbar/Navbar'
 import Footer from '../footer/Footer'
 
-const OrderDetailMain = () => {
+const OrderDetailMain = ( {slug}) => {
   return (
     <div>
         <Navbar/>
-        <OrderData/>
+        <OrderData  data={slug}/>
         <Footer/>
     </div>
   )

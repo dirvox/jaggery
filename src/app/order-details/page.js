@@ -1,7 +1,7 @@
 "use client";
 
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
+
+import OrderDetailMain from "@/components/orderDetails/OrderDetailMain";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -12,15 +12,7 @@ function OrderDetailsContent() {
   return (
 
     <>
-    <Navbar/>
-     <div className="p-4">
-      <h1 className="text-xl font-bold">📦 Order Details</h1>
-
-      <p className="mt-4">
-        <strong>Order ID: </strong> {slug}
-      </p>
-    </div>
-    <Footer/>
+    <OrderDetailMain slug={slug} />
     </>
    
   );
