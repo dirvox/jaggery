@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 import baseUrl from "@/components/server/baseurl";
 
+
+
 export default function EmailContent() {
   const [emails, setEmails] = useState("");
   const [subject, setSubject] = useState("Order Khatauli Gud - Pure, Traditional Jaggery");
