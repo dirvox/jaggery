@@ -100,7 +100,7 @@ const OrderData = ({ data }) => {
                         {isCompleted ? "✔" : ""}
                       </div>
 
-                     {/* THis is jnjndjndjnjd */}
+                    
                       <p
                         className={`mt-2 text-sm font-medium 
                 ${isCompleted ? "text-green-700" : "text-gray-500"}`}
