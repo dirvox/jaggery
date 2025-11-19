@@ -15,7 +15,7 @@ export default function TermAndConditions() {
         </h1>
 
         <p className="text-center text-sm text-gray-500 mt-1 mb-6">
-          Last Updated: [Insert Date]
+          {/* Last Updated: [Insert Date] */}
         </p>
 
         <div className="space-y-8 text-gray-700 leading-relaxed">
@@ -148,7 +148,7 @@ export default function TermAndConditions() {
               4.6 We are not responsible for content posted by users.
             </p>
             <p className="mt-3">
-              4.7 To report content, contact us at [Email Address].
+              4.7 To report content, contact us at Care@khatauligud.com.
             </p>
           </section>
 
@@ -300,7 +300,7 @@ style={{ color: "#C19A6B" }}
 <p className="mt-3">11.7 These Terms do not create a partnership or employment relationship.</p>
 <p className="mt-3">11.8 All trademarks appearing on the Site belong to their respective owners.</p>
 <p className="mt-3">11.9 No third party has rights under these Terms.</p>
-<p className="mt-3">11.10 For complaints or support, contact us at:<br/>Email: [Email Address]</p>
+<p className="mt-3">11.10 For complaints or support, contact us at:<br/>Email: Care@khatauligud.com</p>
 </section>
         </div>
       </div>

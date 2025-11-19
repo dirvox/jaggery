@@ -6,7 +6,7 @@ const PrivacyPolicyContent = () => {
       <h1 className="text-3xl font-semibold mb-6 text-center" style={{ color: "#C19A6B" }}>
         Privacy Policy
       </h1>
-      <p className="mb-6">Last updated: [Insert Date]</p>
+      {/* <p className="mb-6">Last updated: [Insert Date]</p> */}
 
       <section className="mb-6">
         <p>
@@ -26,7 +26,7 @@ const PrivacyPolicyContent = () => {
         <ul className="list-disc ml-6 space-y-2">
           <li><strong>Account:</strong> A unique login created for you to use our Service or certain parts of it.</li>
           <li><strong>Affiliate:</strong> Any organization connected by ownership or control.</li>
-          <li><strong>Firm (We/Us/Our):</strong> Refers to Khatauli Gud located at [Address].</li>
+          <li><strong>Firm (We/Us/Our):</strong> Refers to Khatauli Gud located at Khatauli , Muzaffarnagar , Uttar Pardesh ( India ).</li>
           <li><strong>Cookies:</strong> Small files stored on your device to remember activity and preferences.</li>
           <li><strong>Country:</strong> Uttar Pradesh, India.</li>
           <li><strong>Device:</strong> Any tool used to access the Service.</li>
@@ -35,7 +35,7 @@ const PrivacyPolicyContent = () => {
           <li><strong>Service Provider:</strong> Third parties hired to support operations.</li>
           <li><strong>Third-party Social Media Service:</strong> External service used for login.</li>
           <li><strong>Usage Data:</strong> Automatically collected technical and behavioral information.</li>
-          <li><strong>Website:</strong> Refers to Khatauli Gud, available at http://[website].</li>
+          <li><strong>Website:</strong> Refers to Khatauli Gud, available at https://www.khatauligud.com/.</li>
           <li><strong>You:</strong> The user of the Service.</li>
         </ul>
       </section>
@@ -117,7 +117,7 @@ const PrivacyPolicyContent = () => {
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold mb-3" style={{ color: "#C19A6B" }}>Contact Us</h2>
-        <p>Email: Care@[your-domain].com</p>
+        <p>Email: Care@khatauligud.com</p>
       </section>
     </div>
   )
