@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#C19A6B] via-[#A97C50] to-[#7B4F26]  text-center overflow-hidden">
+    <section className="relative py-20 bg-gradient-to-br from-[#A97C50] via-[#A97C50] to-[#7B4F26] opacity-200  text-center overflow-hidden">
       {/* Background animation */}
       <div className="absolute inset-0 bg-[url('/banner-modern.png')] bg-cover bg-center opacity-10 animate-slow-zoom"></div>
 

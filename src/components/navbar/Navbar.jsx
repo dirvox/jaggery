@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-8">
             {menuItems.map((item) => {
-              let href = item === "Contact" ? "/contact" : `#${item.toLowerCase()}`;
+              let href = item === "Home" ? "/" : `/${item.toLowerCase()}`;
               return (
                 <li key={item}>
                   <a

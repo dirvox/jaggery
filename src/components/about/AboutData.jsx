@@ -25,7 +25,7 @@ const AboutData = () => {
         </h2>
 
         <ul className="list-disc pl-6 text-gray-700 mt-3 space-y-2">
-          <li>100% natural and chemical-free jaggery.</li>
+          {/* <li>100% natural and chemical-free jaggery.</li> */}
           <li>Directly sourced from trusted Khatauli farmers.</li>
           <li>Freshly prepared using traditional techniques.</li>
           <li>Known for its rich taste, aroma, and purity.</li>

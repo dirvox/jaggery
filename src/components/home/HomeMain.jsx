@@ -11,6 +11,7 @@ import CTASection from './CTASection'
 import BlogSection from './BlogSection'
 import Girl from './Girl'
 import LimitedOffer from './LimitedOffer'
+import ThreeDCarousel from './ThreeDCarousel'
 
 const HomeMain = () => {
   return (
@@ -26,6 +27,7 @@ const HomeMain = () => {
          <BlogSection/>
          <FAQSection/>
          <CTASection/>
+         {/* <ThreeDCarousel/> */}
         
         <Footer/>
     </div>

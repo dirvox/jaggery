@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Khatauli Gud | Best Organic Jaggery in India",
   description:
-    "Buy 100% pure, natural, and organic Khatauli Gud (Jaggery) directly from the source. Chemical-free jaggery blocks, cubes, and powder — straight from Khatauli farms.",
+    "Buy 100% pure, natural, and organic Khatauli Gud (Jaggery) directly from the source.  jaggery blocks, cubes, and powder — straight from Khatauli farms.",
   keywords: [
   "Khatauli Gud",
   "Khatauli Jaggery",
@@ -41,7 +41,6 @@ export const metadata = {
   "Natural Sweetener",
   "Cane Sugar Jaggery",
   "Handcrafted Jaggery",
-  "Chemical-free Jaggery",
   "Farm Fresh Gud",
   "Traditional Gud",
   "Unrefined Sweetener",
@@ -92,7 +91,7 @@ export const metadata = {
   "Organic Healthy Sweetener",
   "Natural Energy Booster",
   "Ayurvedic Jaggery",
-  "Chemical-Free Sweetener",
+  
 
   // Product Variants
   "Jaggery Cubes",

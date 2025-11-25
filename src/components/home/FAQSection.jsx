@@ -1,6 +1,6 @@
 const FAQSection = () => {
   const faqs = [
-    { question: "Is your jaggery chemical-free?", answer: "Yes, we use traditional methods with no chemicals." },
+    { question: "Is your jaggery pure?", answer: "Yes, This is pure." },
     { question: "Do you deliver across India?", answer: "Yes, we provide nationwide delivery." },
     { question: "Can I buy in bulk?", answer: "Absolutely! Contact us for bulk orders." },
   ];

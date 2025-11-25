@@ -22,7 +22,7 @@ const Footer = () => {
             KhatauliGud
           </h3>
           <p className="text-sm text-gray-300 leading-relaxed">
-            KharauliGud is your trusted destination for premium quality products
+            KhatauliGud is your trusted destination for premium quality products
             and reliable services. We believe in quality, integrity, and
             customer satisfaction.
           </p>

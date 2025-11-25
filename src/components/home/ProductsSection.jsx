@@ -31,7 +31,7 @@ const ProductsSection = () => {
       slug : "jaggeryblocks",
       pricePerKg: 189,
       mrpPerKg: 289,
-      description: "Pure, chemical-free jaggery blocks from fresh sugarcane juice.",
+      description: "Pure jaggery blocks from fresh sugarcane juice.",
     },
    
   ];
@@ -172,7 +172,7 @@ const ProductsSection = () => {
   };
 
   return (
-    <section id="products" className="bg-[#FAF8F5] py-20 px-5">
+    <section id="products" className="bg-[#FAF8F5] py-22 px-5">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-8">
         Our Products
       </h2>

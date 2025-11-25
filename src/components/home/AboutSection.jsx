@@ -13,7 +13,7 @@ const AboutSection = () => {
       <p className="text-gray-700 text-base md:text-lg max-w-2xl mt-5 leading-relaxed">
         At <span className="font-semibold text-amber-700">KhatauliGud</span>, we believe in
         delivering the purest form of sweetness. Our jaggery is handcrafted using
-        traditional methods — no chemicals, no preservatives, just nature’s
+        traditional methods — pure , no preservatives, just nature’s
         goodness.
       </p>
     </section>

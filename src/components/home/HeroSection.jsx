@@ -54,7 +54,7 @@ const HeroSection = () => {
     <span className="mx-4 sm:mx-6">💛 Made in Khatauli</span>
     <span className="mx-4 sm:mx-6">🍯 Healthy & Wholesome</span>
     <span className="mx-4 sm:mx-6">🔥 Traditional Process</span>
-    <span className="mx-4 sm:mx-6">🌿 Chemical-Free Sweetness</span>
+    {/* <span className="mx-4 sm:mx-6">🌿 Chemical-Free Sweetness</span> */}
     <span className="mx-4 sm:mx-6">💪 Boosts Immunity</span>
     <span className="mx-4 sm:mx-6">🌸 Rich in Minerals</span>
     <span className="mx-4 sm:mx-6">☀️ Sun-Dried Perfection</span>
@@ -71,7 +71,7 @@ const HeroSection = () => {
     <span className="mx-4 sm:mx-6">💛 Made in Khatauli</span>
     <span className="mx-4 sm:mx-6">🍯 Healthy & Wholesome</span>
     <span className="mx-4 sm:mx-6">🔥 Traditional Process</span>
-    <span className="mx-4 sm:mx-6">🌿 Chemical-Free Sweetness</span>
+    {/* <span className="mx-4 sm:mx-6">🌿 Chemical-Free Sweetness</span> */}
     <span className="mx-4 sm:mx-6">💪 Boosts Immunity</span>
     <span className="mx-4 sm:mx-6">🌸 Rich in Minerals</span>
     <span className="mx-4 sm:mx-6">☀️ Sun-Dried Perfection</span>

@@ -14,7 +14,7 @@ const BlogSection = () => {
     {
       title: "Traditional Jaggery Making",
       summary: "Step-by-step guide to handcrafted jaggery.",
-      content: `Traditional jaggery is made by boiling sugarcane juice in large pans until it solidifies. This process involves no chemicals or artificial additives, preserving the natural flavor and nutrients. The handcrafted process ensures high quality and pure taste, unlike mass-produced sugar. Artisans take pride in every batch, ensuring consistency and authenticity.`,
+      content: `Traditional jaggery is made by boiling sugarcane juice in large pans until it solidifies. This process preserving the natural flavor and nutrients. The handcrafted process ensures high quality and pure taste, unlike mass-produced sugar. Artisans take pride in every batch, ensuring consistency and authenticity.`,
       image: "/banner.jpg",
     },
     {

@@ -1,6 +1,6 @@
 const ServicesSection = () => {
   const services = [
-    { name: "Pure Jaggery", description: "100% natural and chemical-free.", icon: "🍯" },
+    { name: "Pure Jaggery", description: "100% natural and Pure.", icon: "🍯" },
     { name: "Handcrafted", description: "Made using traditional methods.", icon: "🤲" },
     { name: "Organic", description: "Healthy and safe for all ages.", icon: "🌱" },
   ];
